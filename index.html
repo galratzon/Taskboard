@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body onload="loadNotes()">
+    <h1>My Task Board</h1>
+    <form action="#" class="formTasks" id="myForm">
+        <div class="inputInfoTask">
+            <label>Enter a task:</label><br>
+            <textarea name="" id="task" cols="30" rows="6" required></textarea>
+        </div>
+        <div class="inputInfoTask">
+            <div class="DateTime">
+                <label>Enter a date to complete the task:</label>
+                <input type="date" id="date" >
+            </div><br>
+
+            <div class="DateTime">
+                <label>Enter Time:</label><br>
+                <input type="time" id="time">
+            </div>
+        </div>
+        <div class="btn">
+            <button id="btnSave" onclick="getInfoTask()">Save</button>
+            <button id="btnClear" onclick="clearForm()">Clear</button>
+        </div>
+    </form>
+    <br>
+
+      <div id="divGeneral">
+      </div>    
+
+</body>
+</html>
