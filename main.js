@@ -5,7 +5,7 @@ function getInfoTask(){
         const taskBox = document.getElementById("task");
         const dateBox = document.getElementById("date");
         const timeBox = document.getElementById("time");
-
+        console.log("test")
         const taskValue = taskBox.value;
         const dateValue = dateBox.value;
         const timeValue = timeBox.value;
